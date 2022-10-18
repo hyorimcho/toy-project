@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rosybrown;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px; //작으면 작을수록 원근감이 크다
+}
+
+.flip-btn {
+  width: 200px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.flip-btn:hover {
+  transform: rotateX(-90deg);
+}
+
+.front {
+  background-color: royalblue;
+  height: 100px;
+  transform: translateZ(50px);
+}
+
+.back {
+  background-color: cadetblue;
+  height: 100px;
+  /* translateZ 함수는 3D요소를 Z축 기준으로 이동하게 한다. */
+  transform: rotateX(90deg) translateZ(150px);
+}
