@@ -1,0 +1,58 @@
+:root {
+  --main-color: rgb(59, 178, 146);
+  --sub-color: rgb(253, 176, 83);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", "Nanum Gothic Coding", monospace;
+}
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background-color: var(--main-color);
+  color: #eee;
+  width: 100%;
+  text-align: center;
+  padding: 24px 0;
+}
+.word-display {
+  margin: 80px 0 40px 0;
+  font-size: 60px;
+  color: var(--sub-color);
+}
+.word-input-box .word-input {
+  width: 300px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.game-info {
+  display: flex;
+  padding-top: rem;
+  gap: 40px;
+}
+.game-info span {
+  font-size: 28px;
+  font-weight: 600;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 12px 18px;
+  background-color: var(--sub-color);
+  color: #eee;
+  font-weight: 500;
+}
+
+.loading {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
